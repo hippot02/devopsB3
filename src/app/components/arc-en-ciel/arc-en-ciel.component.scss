@@ -1,0 +1,43 @@
+:host {
+    position: relative; /* Make sure the host element has a position other than static */
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    animation: rotateHue 2s linear infinite;
+}
+
+:host::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c8a2987f-3e2e-4e4d-9aac-27d02b24bdd3/d6th2q4-8588e7b0-13bb-45e2-b881-51115b5d03a3.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: moveImage 1.5s linear infinite;
+    z-index: 1; 
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(-50%); 
+    }
+    100% {
+        transform: translateX(50%); 
+    }
+}
+
+@keyframes rotateHue {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
