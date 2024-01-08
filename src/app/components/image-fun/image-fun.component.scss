@@ -1,0 +1,15 @@
+.image-fun-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.capydeface{
+    width: 40%;
+    transition: 5s;
+}
+
+.capydeface:hover{
+    rotate: (50040deg);
+    width: 80%;
+}
