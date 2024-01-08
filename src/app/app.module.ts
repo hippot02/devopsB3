@@ -7,7 +7,10 @@ import { ImageFunComponent } from './components/image-fun/image-fun.component';
 import { FeurBoutonComponent } from './components/feur-bouton/feur-bouton.component';
 import { ArcEnCielComponent } from './components/arc-en-ciel/arc-en-ciel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,10 +19,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ImageFunComponent,
     FeurBoutonComponent,
     ArcEnCielComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
