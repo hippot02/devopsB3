@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { ImageFunComponent } from './components/image-fun/image-fun.component';
 import { FeurBoutonComponent } from './components/feur-bouton/feur-bouton.component';
+import { ArcEnCielComponent } from './components/arc-en-ciel/arc-en-ciel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
     AccueilComponent,
     ImageFunComponent,
     FeurBoutonComponent,
+    ArcEnCielComponent,
     NavbarComponent,
   ],
   imports: [
