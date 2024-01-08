@@ -2,14 +2,32 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .capydeface{
-    width: 40%;
+    width: 400px;
     transition: 5s;
 }
 
 .capydeface:hover{
     rotate: (50040deg);
-    width: 80%;
+    width: 100%;
+}
+
+.image-box{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.image-box:hover{
+    opacity: 1;
+}
+.border-box{
+    border: solid;
+}
+.border-box:hover{
+    border: none;
 }
